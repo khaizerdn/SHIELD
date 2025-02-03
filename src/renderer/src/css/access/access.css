@@ -1,0 +1,247 @@
+.container-access {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.access {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  padding: 20px;
+}
+
+.access form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 15px; /* Adds a 10px gap between form elements */
+}
+
+.input-section-one-group {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  height: 57px;
+  min-width: 0; /* Prevents sections from exceeding the container width */
+  padding: 10px;
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+  color: var(--color-muted-dark);
+  background-color: var(--container-color-layer-1);
+  font-size: var(--font-size--1);
+}
+
+.input-section-one label {
+  display: block;
+  height: 15px;
+}
+
+.input-section-one input {
+  width: 100%; /* Make sure the input stretches to the full width of the parent */
+  border: none;
+  box-sizing: border-box;
+  color: var(--color-muted-light);
+  background-color: transparent;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-normal);
+  margin: 0;
+  padding: 0;
+}
+
+.input-section-one input:hover {
+  color: var(--color-primary-dark);
+}
+
+
+.input-section-one input:focus {
+  color: var(--color-primary-dark);
+  outline: none; /* Also removes the default outline */
+}
+
+.input-section-one input::placeholder {
+  color: var(--color-muted-dark); /* Default placeholder color */
+}
+
+.input-section-one input:focus::placeholder {
+  color: var(--color-muted-light); /* Change placeholder color when clicked (focused) */
+}
+
+.button-loginsignup,
+.button-register {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+  gap: 20px;
+  min-height: 48px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-normal);
+}
+
+.button-loginsignup {
+  justify-content: center;
+  background-color: var(--container-color-layer-3);
+  color: var(--color-primary-dark);
+}
+
+.button-loginsignup:hover {
+  background-color: var(--container-color-layer-4);
+  cursor: pointer;
+}
+
+.button-loginsignup:active {
+  background-color: var(--container-color-layer-3);
+  color: var(--color-muted-light);
+}
+
+
+.button-register-text {
+  display: flex;
+  border-radius: var(--border-radius);
+  color: var(--color-primary-dark);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-0);
+  font-weight: var(--font-weight-normal);
+  text-decoration: none;
+}
+
+.button-register-text:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.agreement {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: var(--font-size--2);
+  color: var(--color-muted-light);
+}
+
+.link {
+  color: var(--color-primary-dark); /* Change color on hover */
+  text-decoration: none; /* Add an underline to the links */
+}
+
+.link:hover {
+  text-decoration: underline; /* Add an underline to the links */
+}
+
+.access-dropdown {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border: none;
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+  color: var(--color-muted-light);
+  background-color: var(--container-color-layer-1);
+}
+
+.access-dropdown select {
+  appearance: none; /* Removes default arrow in Chrome, Safari, Opera */
+  height: fit-content;
+  text-align: left;
+  display: inline-flex;
+  border: none;
+  box-sizing: border-box;
+  color: var(--color-muted-light);
+  background-color: transparent;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-0);
+  font-weight: var(--font-weight-normal);
+}
+
+.access-dropdown select:hover {
+  color: var(--color-primary-dark); /* Optional: Change the text color on hover */
+  cursor: pointer;
+}
+
+.access-dropdown select:focus {
+  background-color: var(--container-color-layer-1); /* Change to your desired hover color */
+  border: none;
+  color: var(--color-primary-dark); /* Change text color as needed */
+  outline: none;
+}
+
+.access-dropdown span {
+  margin: 0 5px; /* Add spacing around the slash */
+}
+
+/* Autofill input styles */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  background-color: var(--container-color-layer-1) !important; /* Change background color */
+  color: var(--color-muted-dark) !important; /* Text color */
+  border: none; /* Border when autofilled */
+  -webkit-text-fill-color: var(--color-muted-light) !important; /* Adjust text color */
+  transition: background-color 5000s ease-in-out 0s; /* Prevent default flash of color */
+  height: fit-content;
+}
+
+.password-and-toggle {
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+}
+
+.password-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input-wrapper input {
+  flex-grow: 1;
+}
+
+.toggle-password-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 29px;
+  cursor: pointer;
+}
+
+.toggle-password-icon:hover {
+  fill: var(--color-muted-light2qa);
+}
+
+.users-input {
+  display: flex;
+  height: 20px;
+}
+
+.hr-horizontal-login {
+  border: none;
+  border-top: 1px solid var(--container-color-layer-3);
+}
+
+.title {
+  display: flex;
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-bold);
+  width: 100%;
+  padding-left: 5px;
+}
+
+.logo-mainlogo {
+  display: flex;
+  height: 100%; /* Set this to your desired height */
+  width: auto; /* Adjusts width automatically to maintain aspect ratio */
+}
