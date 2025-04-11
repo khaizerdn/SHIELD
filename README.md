@@ -9,7 +9,7 @@
 
 A desktop application using React and Electron for SHIELD Computer Engineering Organization, that enhanced digital engagement within computer engineering students in the university. Implemented a member management feature, allowing users to easily search, filter, and track membership status through a streamlined interface.
 
-[![Watch the video](SHIELD.png)](https://www.youtube.com/watch?v=xefkKANQcBk)
+[Watch the Demo](https://www.youtube.com/watch?v=xefkKANQcBk)
 
 ## How to Install
 ### Prerequisites
