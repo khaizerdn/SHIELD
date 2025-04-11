@@ -7,7 +7,11 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
-## How to Install and Run SHIELD Application
+A desktop application using React and Electron for SHIELD Computer Engineering Organization, that enhanced digital engagement within computer engineering students in the university. Implemented a member management feature, allowing users to easily search, filter, and track membership status through a streamlined interface.
+
+![App Screenshot](/SHIELD.png)
+
+## How to Install
 ### Prerequisites
 Make sure you have the following applications installed on your system:
 1. XAMPP (for Apache and MySQL)
